@@ -381,7 +381,7 @@ public class HelloArActivity extends AppCompatActivity implements SampleRender.R
       Texture virtualObjectAlbedoTexture =
           Texture.createFromAsset(
               render,
-              "models/SkipperBeak.png",
+              "models/SkipperBodyWhite.png",
               Texture.WrapMode.CLAMP_TO_EDGE,
               Texture.ColorFormat.SRGB);
       Texture virtualObjectPbrTexture =
@@ -390,6 +390,18 @@ public class HelloArActivity extends AppCompatActivity implements SampleRender.R
               "models/SkipperBodyBlack.png",
               Texture.WrapMode.CLAMP_TO_EDGE,
               Texture.ColorFormat.SRGB);
+      Texture virtualObjectBodyWhiteTexture =
+              Texture.createFromAsset(
+                      render,
+                      "models/SkipperBodyWhite.png",
+                      Texture.WrapMode.CLAMP_TO_EDGE,
+                      Texture.ColorFormat.SRGB);
+      Texture virtualObjectFootTexture =
+              Texture.createFromAsset(
+                      render,
+                      "models/SkipperFoot.png",
+                      Texture.WrapMode.CLAMP_TO_EDGE,
+                      Texture.ColorFormat.SRGB);
       virtualObjectMesh = Mesh.createFromAsset(render, "models/Skipper.obj");
       virtualObjectShader =
           Shader.createFromAssets(
